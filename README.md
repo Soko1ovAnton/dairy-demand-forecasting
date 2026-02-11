@@ -32,6 +32,7 @@
 dairy-demand-forecasting/
 ├── README.md
 ├── pyproject.toml
+├── requirements.txt
 ├── .gitignore
 ├── data/
 │   └── dairy_data.csv
@@ -44,5 +45,12 @@ dairy-demand-forecasting/
 │       ├── data.py            # загрузка и препроцессинг данных
 │       ├── model.py           # архитектура нейросети
 │       └── train.py           # цикл обучения и оценка
-└── scripts/
-    └── train_model.py         # CLI-скрипт для обучения
+├── scripts/
+│   └── train_model.py         # CLI-скрипт для обучения
+├── artifacts/                  # сохранённые модели и графики
+│   ├── dairy_demand_model.pt
+│   ├── preprocessor.joblib
+│   ├── metrics.json
+│   └── training_curves.png
+└── tests/
+    └── test_data_pipeline.py
